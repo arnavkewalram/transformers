@@ -60,6 +60,8 @@ if __name__ == "__main__":
     d1.remove("models")
     d = d2 + d1
 
+    d = d2[:7] + ["models/phimoe"]
+
     if args.subdirs != "":
         model_tests = ast.literal_eval(args.subdirs)
         # We handle both cases with and without prefix because `push-important-models.yml` returns the list without
